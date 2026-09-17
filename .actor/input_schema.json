@@ -12,6 +12,7 @@
     "maxReviews": {
       "title": "Numero massimo di recensioni da analizzare",
       "type": "integer",
+      "description": "Limite di sicurezza per non superare i costi previsti in un singolo run.",
       "default": 100,
       "minimum": 1,
       "maximum": 500
