@@ -1,0 +1,9 @@
+{
+  "actorSpecification": 1,
+  "name": "review-sentiment-analyzer",
+  "title": "Review Sentiment & Summary Analyzer",
+  "description": "Analizza il sentiment e i temi ricorrenti in un elenco di recensioni usando l'AI",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile"
+}
