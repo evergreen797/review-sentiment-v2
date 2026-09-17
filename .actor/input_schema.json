@@ -1,0 +1,28 @@
+{
+  "title": "Review Sentiment Analyzer Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "reviewsText": {
+      "title": "Recensioni (una per riga)",
+      "type": "string",
+      "description": "Incolla qui le recensioni da analizzare, una per riga.",
+      "editor": "textarea"
+    },
+    "maxReviews": {
+      "title": "Numero massimo di recensioni da analizzare",
+      "type": "integer",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 500
+    },
+    "geminiApiKey": {
+      "title": "Chiave API Gemini",
+      "type": "string",
+      "description": "La tua chiave API gratuita di Google AI Studio (aistudio.google.com).",
+      "editor": "textfield",
+      "isSecret": true
+    }
+  },
+  "required": ["reviewsText", "geminiApiKey"]
+}
