@@ -42,8 +42,11 @@ Recensioni:
 
 def call_gemini(prompt: str, api_key: str) -> dict:
     response = requests.post(
-        f"{GEMINI_API_URL}?key={api_key}",
-        headers={"content-type": "application/json"},
+        GEMINI_API_URL,
+        headers={
+            "content-type": "application/json",
+            "x-goog-api-key": api_key,
+        },
         json={"contents": [{"parts": [{"text": prompt}]}]},
         timeout=90,
     )
